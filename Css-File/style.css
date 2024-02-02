@@ -1,0 +1,726 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body {
+    background: #2e2e2e;
+    height: fit-content;
+    line-height:1.5;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+
+
+}
+
+nav{
+    
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    position: fixed;
+    z-index: 9999;
+    transition: 0.6s;
+ 
+}
+
+nav.home-page{
+    display:flex;
+}
+
+nav.background{
+    display:flex;
+    
+    background-color: black;
+
+}
+.nav-buttons-left{
+    margin: 10px;
+    display: flex;
+    
+}
+
+.nav-buttons-left a{
+    
+    padding: 10px;
+    margin: 0 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: medium;
+    font-weight: bold;
+    color: white;
+    transition: 0.3s;
+}
+
+.nav-buttons-right{
+    width: 332px;
+    margin: 10px;
+    display: flex;
+    justify-content: flex-end;
+
+    
+}
+
+.nav-buttons-right a{
+    width:150px;
+    padding: 10px;
+    margin: 0 16px;
+    text-align: center;
+    text-decoration: none;
+    font-size: medium;
+    font-weight: bold;
+    color: white;
+    transition: 0.3s;
+}
+
+
+.nav-buttons-left a:hover{
+    color: rgb(88, 88, 88);
+}
+
+.nav-buttons-right a:hover{
+    color: rgb(88, 88, 88);
+}
+
+
+
+#Home-Page-Button a{
+    padding: 8px 60px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 60px;
+    font-weight: 1000;
+    color: white;
+    transition: all 0.3s ease;  
+}
+
+
+
+#Home-Page-Button a:hover{
+    color: rgb(88, 88, 88);
+}
+
+.toggle-button {
+    display: none; 
+    margin: 20px;
+   
+    
+
+
+}
+
+.toggle-button img{
+    width: 30px;
+
+}
+
+.menu{
+    position: fixed;
+    width: 50%;
+    height: 100vh;
+    background-color: rgb(70, 42, 42);
+    padding: 50px;
+    transform: translatex(-100000px);
+    z-index: 99999999;
+    transition: 0.3s;
+
+}
+
+.menu li{
+    list-style-type: none;
+    border-bottom:1px solid white;
+    padding: 30px 0;
+    text-align: center;
+
+}
+
+.showmenu{
+    transform:translateX(0);
+}
+
+.menu li:last-child{
+    border-bottom:none;
+
+}
+
+.menu li a{
+    color: snow;
+    text-decoration: none;
+    font-size: 20px;
+    text-align:center;
+
+}
+
+video{
+    display: flex;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    width: 100%;
+    height: calc(.5625 * 100vw);
+}
+
+
+.highlight{
+    background: rgb(70, 42, 42);
+}
+
+
+
+.about-sections{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    
+}
+
+.about-sections img{
+width: 50%;
+height: 100%;
+    
+}
+
+
+
+.about-text{
+    width: 50% ;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+}
+
+.about-text p{
+    padding: 20px;
+}
+
+img.about_page_img{
+    width: 50%;
+}
+.header-space{
+    padding-top: 100px;
+    
+}
+
+
+.carousel-wrapper{
+    width: 100%;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+}
+
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 350px;
+    margin-left:60px;
+    margin-right:60px;
+    height: fit-content;
+    padding: 30px;
+    transition: 0.2s;
+}
+
+.card:hover{
+    padding: 20px;
+    background: #24262b;
+    color: white;
+}
+
+.card img{
+    
+    background: rgb(119, 119, 119);
+    width: 320px;
+    height: 320px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding:10px;
+
+    object-fit: cover;
+
+
+
+}
+
+.shop {
+    margin-top: 2rem;
+
+}
+
+.shop-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left:120px;
+    padding-right:120px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+    
+
+}
+
+.product-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 700px;
+    margin-bottom:10px;
+    height: fit-content;
+    padding: 30px;
+    transition: 0.2s;
+
+}
+
+.product-box:hover{
+    padding: 20px;
+    margin-bottom:20px;
+    background: #24262b;
+    color: white;
+
+}
+
+.product-img{
+    padding: 10px;
+    background-color: rgb(146, 146, 146);
+    width:300px;
+    height:auto;
+    margin-bottom: 0.5rem;
+}
+
+.video-title{
+
+    text-align: center;
+    
+
+
+}
+.upload-title{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.hp-sections{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.hp-sections img{
+    display: flex;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    width: 100%;
+    height: calc(.5625 * 100vw);
+}
+
+
+.button-section{
+    display: flex;
+    justify-content: center;
+    
+
+}
+.button{
+    display: flex;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 20px;
+    text-decoration: none;
+    justify-content:center ;
+    z-index: 999;
+
+    
+    
+
+}
+
+.text{
+    display: flex;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 20px;
+    text-decoration: none;
+    justify-content:center ;
+    z-index: 999;
+
+
+
+}
+
+.button a{
+
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+
+
+}
+
+.text a{
+
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size:30px ;
+
+
+
+}
+
+.tour-list{
+    display: flex;
+    flex-direction: column;
+    padding-bottom:250px;
+}
+
+.tours{
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.tour-info-header{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    background: black;
+    font-size: 30px;
+
+
+}
+
+.tour-info{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom:1px solid black ;
+    text-align: left;
+    height: 70px;
+    font-weight: 300;
+    color:rgb(0, 0, 0);
+    font-size: 30px;
+
+
+}
+
+
+a.position{
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a.name{
+    width:200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+a.rank{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:220px
+}
+
+a.points{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+    text-decoration: none;
+    width: 200px;
+    
+
+}
+
+a.rank img{
+    height: 100px;
+}
+
+.tour-image-box img{
+    width: 100%;
+    
+}
+.progress_space{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin:100px ;
+}
+
+
+
+
+.progress {
+    display: flex;
+    width: 510px;
+    height: 50px;
+    background: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+    
+}
+
+.progress_text{
+    display: flex;
+    justify-content: flex-end;
+    font-weight: 500;
+    padding: 10px;
+    color: #ffffff;
+    font-size: 25px;
+}
+
+.user_rank{
+    display: flex;
+    justify-content: center;
+    
+}
+.progress_fill {
+    transition: 0.2s;
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    height: 100%;
+    background-color: #000000; 
+}
+
+.footer-container{
+    background-color: rgb(70, 42, 42);
+    max-height: fit-content;
+    max-width: 100%;
+    padding:20px;
+}
+
+.footer-row{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style: none;
+}
+
+
+.footer-column{
+    width: 25%;
+    padding: 0 15px; 
+
+}
+
+.footer-column h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform:capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-column h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #000000;
+    height: 2px;
+    box-sizing:border-box;
+    width: 50px;
+
+}
+
+.footer-column ul li:not(:last-child){
+    margin-bottom: 10px;
+
+}
+
+.footer-column ul li a{
+    font-size:16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color:#bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-column ul li a:hover{
+    color:#ffffff;
+    padding-left: 8px;
+
+}
+
+.footer-column .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.3s ease;
+
+}
+.footer-column .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+
+
+}
+
+img.footer_img{
+    height:40px;
+    width: 40px;
+}
+
+@media screen and (max-width: 1350px) {
+  
+    .about-sections img{
+    width: 100%;
+    height: 100%;
+        
+    }
+    
+    .about-text{
+        width: 100% ;
+        padding: 50px;
+
+    }
+
+    .about-sections.second{
+        flex-direction: column-reverse;
+    }
+    
+    .nav-buttons-left{
+        display:none;
+    }
+    .nav-buttons-right{
+        display: none;
+
+    }
+    #Home-Page-Button a{
+        
+        text-align: center;
+        text-decoration: none;
+        font-size: 25px;
+        font-weight: 1000;
+        color: white;
+        transition: all 0.3s ease;
+          
+    }
+
+    #Home-Page-Button{
+        width: 50%
+    }
+
+    .highlight{
+        width:500px;
+    }
+
+    nav.home-page{
+        height:50px;
+
+    }
+
+    nav.background{
+        height:50px;
+
+    }
+
+    .toggle-button {
+        display: flex;
+    
+    }
+    
+    .header-space{
+        padding-top: 50px;
+        
+    }
+
+    }
+    
+
+
+    
+
+@media screen and (max-width: 1460px) {
+    .carousel {
+        grid-auto-columns: calc((100% / 4) + 60px);
+    }
+}
+
+@media screen and (max-width: 1360px) {
+    .shop-content{
+        justify-content: center;
+
+    }
+}
+
+
+@media screen and (max-width: 1135px) {
+    .carousel {
+        grid-auto-columns: calc((100% / 4) + 150px);
+    }
+}
+@media screen and (max-width: 775px) {
+    .carousel {
+        grid-auto-columns: 100%;
+    }
+}
+
+@media screen and (max-width: 1125px){
+    .tours{
+        width:100%;
+        padding: 40px 100px;
+    }
+
+    a.rank img{
+        height: 60px;
+    }
+
+    .tour-info{
+        font-size: 20px;
+        
+    }
+
+    .tour-info-header{
+        font-size: 20px;
+        
+    }
+
+    a.date{
+        width:15%;
+    }
+}
