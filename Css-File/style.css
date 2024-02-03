@@ -9,7 +9,7 @@
     
 }
 body {
-    background: #2e2e2e;
+    background: #757575;
     height: fit-content;
     line-height:1.5;
     font-family: 'Poppins', sans-serif;
@@ -83,11 +83,11 @@ nav.background{
 
 
 .nav-buttons-left a:hover{
-    color: rgb(88, 88, 88);
+    color: rgb(214, 139, 214);
 }
 
 .nav-buttons-right a:hover{
-    color: rgb(88, 88, 88);
+    color: rgb(214, 139, 214);
 }
 
 
@@ -105,7 +105,7 @@ nav.background{
 
 
 #Home-Page-Button a:hover{
-    color: rgb(88, 88, 88);
+    color: rgb(0, 0, 0);
 }
 
 .toggle-button {
@@ -169,7 +169,8 @@ video{
 
 
 .highlight{
-    background: rgb(70, 42, 42);
+    background: rgb(214, 139, 214);
+    margin-right: 40px;
 }
 
 
@@ -179,7 +180,7 @@ video{
     flex-direction: row;
     flex-wrap: wrap;
 
-    
+
 }
 
 .about-sections img{
@@ -192,7 +193,6 @@ height: 100%;
 
 .about-text{
     width: 50% ;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -298,13 +298,12 @@ img.about_page_img{
     padding: 20px;
     margin-bottom:20px;
     background: #24262b;
-    color: white;
+    color: rgb(214, 139, 214);
 
 }
 
 .product-img{
     padding: 10px;
-    background-color: rgb(146, 146, 146);
     width:300px;
     height:auto;
     margin-bottom: 0.5rem;
@@ -390,32 +389,32 @@ img.about_page_img{
 
 }
 
-.tour-list{
+.lb-list{
     display: flex;
     flex-direction: column;
     padding-bottom:250px;
 }
 
-.tours{
+.lb{
     padding-left: 200px;
     padding-right: 200px;
     padding-top: 80px;
     padding-bottom: 80px;
 }
-.tour-info-header{
+.lb-info-header{
     padding: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-weight: 500;
-    color: rgb(255, 255, 255);
+    font-weight: 700; 
+    color: rgb(255, 0, 0);
     background: black;
     font-size: 30px;
 
 
 }
 
-.tour-info{
+.lb-info{
     padding: 10px;
     display: flex;
     flex-direction: row;
@@ -424,7 +423,38 @@ img.about_page_img{
     text-align: left;
     height: 70px;
     font-weight: 300;
-    color:rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
+    font-size: 30px;
+
+
+}
+
+
+
+.ranking-list{
+    display: flex;
+    flex-direction: column;
+    padding-bottom:250px;
+}
+
+.ranking{
+    padding-left: 200px;
+    padding-right: 200px;
+    
+    padding-bottom: 80px;
+}
+
+
+.ranking-info{
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    font-weight: 300;
+    background: #b6b6b6;
+    color:rgb(255, 255, 255);
     font-size: 30px;
 
 
@@ -444,6 +474,7 @@ a.name{
     justify-content: space-between;
     align-items: center;
 }
+
 a.rank{
     display: flex;
     justify-content: space-between;
@@ -466,7 +497,44 @@ a.rank img{
     height: 100px;
 }
 
-.tour-image-box img{
+a.points_gained{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:220px;
+    margin-right: 20px;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+a.points_gained img{
+    height: 100px;
+    padding: 5px;
+}
+
+a.workout_done{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 600;
+    
+    
+}
+
+.recent{
+    padding: 0 200px;
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(214, 139, 214);
+}
+
+.recent span{
+    margin: 5px;
+}
+
+.lb-image-box img{
     width: 100%;
     
 }
@@ -474,11 +542,19 @@ a.rank img{
     display: flex;
     justify-content: center;
     align-self: center;
-    margin:100px ;
+    margin:40px ;
 }
 
+.workout_pic{
+    display: flex;
+    align-items: center;
+    
+}
 
-
+.workout_pic img{
+    height:150px;
+    
+}
 
 .progress {
     display: flex;
@@ -504,13 +580,19 @@ a.rank img{
     justify-content: center;
     
 }
+
+.user_rank img {
+    height: 150px;
+    margin: 15px;
+}
+
 .progress_fill {
     transition: 0.2s;
     display: flex;
     justify-content: flex-end;
-    width: 50%;
+    width: 0%;
     height: 100%;
-    background-color: #000000; 
+    background-color: rgb(214, 139, 214); 
 }
 
 .footer-container{
@@ -701,26 +783,58 @@ img.footer_img{
 }
 
 @media screen and (max-width: 1125px){
-    .tours{
+    .lb{
         width:100%;
         padding: 40px 100px;
     }
 
     a.rank img{
-        height: 60px;
+        height: 70px;
     }
 
-    .tour-info{
+    .lb-info{
+        font-size: 25px;
+        
+    }
+
+    .lb-info-header{
         font-size: 20px;
         
     }
 
-    .tour-info-header{
-        font-size: 20px;
-        
+    a.rank{
+        width:190px;
+    }
+}
+
+@media screen and (max-width: 1535px){
+    a.workout_done{
+        font-size: 30px;
+
+    }
+}
+
+@media screen and (max-width: 1400px){
+
+    a.workout_pic img{
+        height: 50px;
     }
 
-    a.date{
-        width:15%;
+    a.points_gained{
+        font-size: 30px;
+        width:100px
     }
+
+    a.points_gained img{
+        height: 50px
+    }
+}
+
+@media screen and (max-width: 1080px){
+    a.workout_done{
+        font-size: 20px;
+
+    }
+
+
 }
