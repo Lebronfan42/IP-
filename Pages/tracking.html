@@ -2,12 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Travis Scott</title>
+    <title>Sigma</title>
     <link rel="stylesheet" href="/Css-File/style.css" type="text/css">
 </head>
 
 <body>
     <script src="/JS-Files/menu.js" defer></script>
+    <script src="/JS-Files/nav_fade_and_carousell.js" defer></script>
+    <script src="/JS-Files/dropdown.js" defer></script>
+    <script src="/JS-Files/PBar.js" defer></script>
 
     <!-- Adding the main navigation bar for desktop view -->
     <!-- navigation bar has three section, left, right and the middle section --> 
@@ -29,7 +32,7 @@
              <a href="leaderboard.html">LEADERBOARD</a>  
              <a href="login.html">GET STARTED</a> 
       </div>
-</nav>
+    </nav>
 
     <!-- Adding the main navigation bar for mobile view -->
     <ul class="menu">
@@ -43,81 +46,68 @@
     </ul>
 
     <div class="header-space">
-        <section class="shop-container">
-            <div class="shop-content">
+        <div class="progress_space">
+            <div class="progress_bar" id="myProgressBar">
+                <div class="user_rank">
+                    <img src="/Background-images/rank_2_track.png">
+                </div>
+                <div class="progress">
+                    <div class="progress_fill"></div>
+                </div>
+                <div class="progress_text">
+                    <span class="pbar_text">0%</span>
+                </div>
+            </div>
+        </div>
+        
+        <section class="tracking-container">
+            <span>Todays Workout</span>
+            <div class="tracking-content">
+                <div class="wrapper">
+                    <div class="tdy_workout">
+                        <a><img id="completionImage_1" src="/Background-images/back.png" alt="Clothing_1" class = "tracking_img"></a>
+                        <h2 class="product-title">Back Workout</h2>
+                    </div>
+                    <div class="collapsible">
+                        <input type="checkbox" id="collapsible-head">
+                     <label for="collapsible-head">Start Workout</label>
+                     <div class="collapsible-text"> 
+        
+                        <div id="checklist_1">
+                            <label for="task1">Lat Pulldown</label> <input type="checkbox" id="task1"><br>
+                            <label for="task2">Barbell Rows</label> <input type="checkbox" id="task2"><br>
+                            <label for="task3">Single-Arm Pulldowns</label> <input type="checkbox" id="task3"><br>
+                            <label for="task4">Shrugs</label> <input type="checkbox" id="task4"><br>
+                          </div>
+                        
+                          <script src="/JS-Files/workout_one.js" defer></script>
+                     </div>
+                </div>
+                </div>
 
-                <div class="product-box">
-                    
-                    <a href="https://shop.travisscott.eu.com/product/astroworld-festival-run-beyond-belief/" target="_blank" title="Shop Link"><img src="/Clothing/Clothing_1.png" alt="Clothing_1" class = "product-img"></a>
-                    <h2 class="product-title">ASTROWORLD FESTIVAL RUN BEYOND BELIEF</h2>
-                    <span class="price">$129.75</span>
+                
+                <div class="wrapper">
+                    <div class="tdy_workout">
+                        <a><img id="completionImage_2" src="/Background-images/cardio.png" alt="Clothing_1" class = "tracking_img"></a>
+                        <h2 class="product-title">Cardio Workout</h2>
+                    </div>
+                    <div class="collapsible_2">
+                        <input type="checkbox" id="collapsible-head_2">
+                     <label for="collapsible-head_2">Start Workout</label>
+                     <div class="collapsible-text_2"> 
+        
+                        <div id="checklist_2">
+                            <label for="task1">30 min Sprint</label> <input type="checkbox" id="task1"><br>
+                            <label for="task2">5 min Rest</label> <input type="checkbox" id="task2"><br>
+                            <label for="task3">30 min Sprint</label> <input type="checkbox" id="task3"><br>
+                            <label for="task4">5 min Cooldown</label> <input type="checkbox" id="task4"><br>
+                          </div>
+                        
+                          <script src="/JS-Files/workout_two.js" defer></script>
+                     </div>
                 </div>
-                <div class="product-box">
-                    
-                    <a href="https://fanpacks.travisscott.com/product/TSCT24/utopia-x-kaws-tee-i?cp=null" target="_blank" title="Shop Link"><img src="/Clothing/Clothing_2.png" alt="Clothing_2" class = "product-img"></a>
-                    <h2 class="product-title">UTOPIA X KAWS TEE I</h2>
-                    <span class="price">$87.47</span>
                 </div>
-                <div class="product-box">
-                    
-                    <a href="https://stockx.com/travis-scott-reverse-dog-zip-up-hoodie-brown" target="_blank" title="Shop Link"><img src="/Clothing/Clothing_3.png" alt="Clothing_3" class = "product-img"></a>
-                    <h2 class="product-title">TRAVIS SCOTT REVERSE DOG ZIP UP HOODIE</h2>
-                    <span class="price">$165</span>
-                </div>
-                <div class="product-box">
-                    
-                    <a href="https://shop.travisscott.eu.com/product/utopia-x-kaws-hoodie-ii/" target="_blank" title="Shop Link"><img src="/Clothing/Clothing_4.png" alt="Clothing_4" class = "product-img"></a>
-                    <h2 class="product-title">UTOPIA X KAWS HOODIE II</h2>
-                    <span class="price">$129.75</span>
-                </div>
-                <div class="product-box">
-                    
-                    <a href="https://scottmerch.com/travis-scott-cactus-jack-night-sweatshirt/" target="_blank" title="Shop Link"><img src="/Clothing/Clothing_5.png" alt="Clothing_5" class = "product-img"></a>
-                    <h2 class="product-title">TRAVIS SCOTT CACTUS JACK HOODIE</h2>
-                    <span class="price">$89.99</span>
-                </div>
-                <div class="product-box">
-                    
-                    <a href="https://scottmerch.com/thrills-and-chills-astroworld-fleece-trouser/" target="_blank" title="Shop Link"><img src="/Clothing/Clothing_6.png" alt="Clothing_6" class = "product-img"></a>
-                    <h2 class="product-title">THRILLS AND CHILLS ASTROWORLD FLEECE TROUSER</h2>
-                    <span class="price">$80.00</span>
-                </div>
-                <div class="product-box">
-                    
-                    <a href="https://stockx.com/travis-scott-cactus-trails-half-zip-sherpa-hoodie-natural" target="_blank" title="Shop Link"><img src="/Clothing/Clothing_7.png" alt="Clothing_7" class = "product-img"></a>
-                    <h2 class="product-title">TRAVIS SCOTT CACTUS TRAILS HALF-ZIP SHERPA HOODIE</h2>
-                    <span class="price">$244</span>
-                </div>
-                <div class="product-box">
-                    
-                    <a href="https://stockx.com/travis-scott-flare-sweatpants-brown" target="_blank" title="Shop Link"><img src="/Clothing/Clothing_8.png" alt="Clothing_8" class = "product-img"></a>
-                    <h2 class="product-title">TRAVIS SCOTT FLARE SWEATPANTS</h2>
-                    <span class="price">$250</span>
-                </div>
-                <div class="product-box">
-                    
-                    <a href="https://scottmerch.com/look-mom-i-can-fly-real-t-shirt/" target="_blank" title="Shop Link"><img src="/Clothing/Clothing_9.png" alt="Clothing_9" class = "product-img"></a>
-                    <h2 class="product-title">LOOK MOM I CAN FLY REAL T-SHIRT</h2>
-                    <span class="price">$69.99</span>
-                </div>
-                <div class="product-box">
-                    
-                    <a href="https://scottmerch.com/cactus-jack-streetwear-shorts/" target="_blank" title="Shop Link"><img src="/Clothing/Clothing_10.png" alt="Clothing_10" class = "product-img"></a>
-                    <h2 class="product-title">CACTUS JACK STREETWEAR SHORTS</h2>
-                    <span class="price">$89.00</span>
-                </div>
-                <div class="product-box">
-                    
-                    <a href="https://shop.travisscott.eu.com/product/utopia-x-kaws-hoodie-i/" target="_blank" title="Shop Link"><img src="/Clothing/Clothing_11.png" alt="Clothing_11" class = "product-img"></a>
-                    <h2 class="product-title">UTOPIA X KAWS HOODIE II</h2>
-                    <span class="price">$129.75</span>
-                </div>
-                <div class="product-box">
-                    
-                    <a href="https://shop.travisscott.eu.com/product/utopia-x-kaws-tee-ii/" target="_blank" title="Shop Link"><img src="/Clothing/Clothing_12.png" alt="Clothing_12" class = "product-img"></a>
-                    <h2 class="product-title">UTOPIA X KAWS TEE II</h2>
-                    <span class="price">$87.47</span>
-                </div>
+                
                 
 
             </div>
@@ -131,39 +121,31 @@
                         <!-- each part is dived into more parts which  contain the content  -->
                         <h4>SOCIALS</h4>
                         <div class="social-links">
-                            <a href="https://www.youtube.com/@TravisScottXX" target="_blank" title="Youtube"><img src="/Icons/youtube-icon.png" alt="YouTube" class="footer_img"></a>
-                            <a href="https://twitter.com/trvisXX" target="_blank" title="Twitter"><img src="/Icons/twitter-icon.png" alt="Twitter" class="footer_img"></a>
-                            <a href="https://open.spotify.com/artist/0Y5tJX1MQlPlqiwlOH1tJY?si=BVABNTSiRW61I0EGO3LJ7Q" target="_blank" title="Spotify"><img src="/Icons/spotify-icon.png" alt="Spotify" class="footer_img"></a>
-                            <a href="https://www.instagram.com/travisscott/?hl=en" target="_blank" title="Instagram"><img src="/Icons/instagram-icon.png" alt="Instagram" class="footer_img"></a>
+                            <a href="https://www.youtube.com/@NgeeAnnPolyNP" target="_blank" title="Youtube"><img src="/Icons/youtube-icon.png" alt="YouTube" class="footer_img"></a>
+                            <a href="https://www.facebook.com/ngeeannpoly/" target="_blank" title="Twitter"><img src="/Icons/facebook-icon.png" alt="Twitter" class="footer_img"></a>
+                            <a href="https://www.instagram.com/ngeeannpoly/?hl=en" target="_blank" title="Instagram"><img src="/Icons/instagram-icon.png" alt="Instagram" class="footer_img"></a>
                         </div>
-                    </div>
-                    <div class="footer-column">
-                        <h4>SHOP</h4>
-                        <ul>
-                            <li><a href="tour.html">TOUR</a></li>
-                            <li><a href="clothing.html">CLOTHING</a></li>
-                            <li><a href="vinyl.html">VINYL</a></li>
-                            <li><a href="shoes.html">SHOES</a></li>
-                        </ul>
                     </div>
                     <div class="footer-column">
                         <h4>SITEMAP</h4>
                         <ul>
-                            <li><a href="">HOME PAGE</a></li>
-                            <li><a href="">ABOUT</a></li>
-                            <li><a href="">TOUR</a></li>
+                            <li><a href="tracking.html">TRACKING</a></li>
+                            <li><a href="ranking.html">RANKING</a></li>
+                            <li><a href="videos.html">VIDEOS</a></li>
+                            <li><a href="leaderboard.html">LEADERBOARD</a></li>
                         </ul>
                     </div>
+    
                     <div class="footer-column">
                         <h4>MORE SITES</h4>
                         <ul>
-                            <li><a href="https://www.travisscott.com/" target="_blank" title="TravisScott.com">OFFICIAL SITE</a></li>
-                            <li><a href="https://fanpacks.travisscott.com/" target="_blank" title="Merch">OFFICIAL MERCH</a></li>
+                            <li><a href="https://www.np.edu.sg/" target="_blank" title="TravisScott.com">OFFICIAL SITE</a></li>
+                            <li><a href="https://fanpacks.travisscott.com/" target="_blank" title="Merch">GYMWERKZ SOCIAL MEDIA</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
-        </footer>  
+        </footer>   
       
 
     

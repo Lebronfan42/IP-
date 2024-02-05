@@ -10,10 +10,12 @@
 }
 body {
     background: #757575;
-    height: fit-content;
-    line-height:1.5;
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+
+    
 
 
 }
@@ -159,14 +161,6 @@ nav.background{
 
 }
 
-video{
-    display: flex;
-    margin-top: -10px;
-    margin-bottom: -10px;
-    width: 100%;
-    height: calc(.5625 * 100vw);
-}
-
 
 .highlight{
     background: rgb(214, 139, 214);
@@ -212,7 +206,12 @@ img.about_page_img{
     
 }
 
-
+.recommended_workouts{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    flex-wrap: wrap;
+}
 .carousel-wrapper{
     width: 100%;
     display: flex;
@@ -279,8 +278,251 @@ img.about_page_img{
     
 
 }
+.shop-container{
+    display: flex;
+    flex-direction: column;
+}
 
-.product-box {
+.video-container span{
+    padding:20px 120px ;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.tracking-container span{
+    padding:20px 120px ;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.tracking-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left:120px;
+    padding-right:120px;
+    
+    padding-bottom: 50px;
+    
+    
+
+}
+
+
+.tdy_workout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 700px;
+    margin-bottom:10px;
+    height: fit-content;
+    font-size: 25px;
+    margin-bottom:10px;
+    transition: 0.2s;
+
+}
+
+.tdy_workout_home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 700px;
+    margin-bottom:10px;
+    height: fit-content;
+    font-size: 25px;
+    margin-bottom:10px;
+    transition: 0.2s;
+    padding: 30px;
+
+}
+.tdy_workout_home img{
+    width: 600px;
+    height: auto;
+}
+.tdy_workout_home:hover{
+    background: #000000;
+    padding: 30px;
+    color: rgb(214, 139, 214);
+    cursor: pointer;
+}
+
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.collapsible{
+    width: 600px;
+    overflow: hidden;
+    font-weight: 500;
+}
+
+input#collapsible-head {
+    display: none;
+}
+
+.collapsible label{
+    text-align: center;
+    position: relative;
+    font-weight: 600;
+    font-size: 30px;
+    background: #35fc88;
+    color: black;
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    z-index: 1;
+    transition: 0.3s;
+
+}
+
+.collapsible #checklist_1 label{
+    text-align: center;
+    position: relative;
+    font-weight: 600;
+    font-size: 30px;
+    background: #ffffff;
+    color: black;
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    z-index: 1;
+    transition: 0.3s;
+
+}
+
+input[type="checkbox"] {
+    width: 20px; 
+    height: 20px;
+}
+
+.collapsible label:hover{
+    background: white;
+    color: rgb(214, 139, 214);
+    transition: 0.2s;
+}
+
+
+
+.collapsible-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 25px;
+    max-height: 1px;
+    overflow: hidden;
+    border-radius: 4px;  
+    transition:  0.3s;
+}
+
+input[type="checkbox"] {
+    width: 30px; 
+    height: 30px;
+}
+
+#checklist_1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.collapsible input:checked ~ .collapsible-text{
+    
+    max-height: fit-content;
+    padding: 25px;
+    margin-bottom: 20px ;
+    background: #ffffff;
+    transition: 0.3s;
+    
+}
+
+.collapsible_2{
+    width: 600px;
+    overflow: hidden;
+    font-weight: 500;
+}
+
+input#collapsible-head_2 {
+    display: none;
+}
+
+.collapsible_2 label{
+    text-align: center;
+    position: relative;
+    font-weight: 600;
+    font-size: 30px;
+    background: #35fc88;
+    color: black;
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    z-index: 1;
+    transition: 0.3s;
+
+}
+
+.collapsible_2 #checklist_2 label{
+    text-align: center;
+    position: relative;
+    font-weight: 600;
+    font-size: 30px;
+    background: #ffffff;
+    color: black;
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    z-index: 1;
+    transition: 0.3s;
+
+}
+
+.collapsible_2 label:hover{
+    background: white;
+    color: rgb(214, 139, 214);
+    transition: 0.2s;
+}
+
+
+
+.collapsible-text_2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 25px;
+    max-height: 1px;
+    overflow: hidden;
+    border-radius: 4px;  
+    transition:  0.3s;
+}
+
+#checklist_2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.collapsible_2 input:checked ~ .collapsible-text_2{
+    
+    max-height: fit-content;
+    padding: 25px;
+    margin-bottom: 20px ;
+    background: #ffffff;
+    transition: 0.3s;
+    
+}
+
+.videos {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -294,7 +536,7 @@ img.about_page_img{
 
 }
 
-.product-box:hover{
+.videos:hover{
     padding: 20px;
     margin-bottom:20px;
     background: #24262b;
@@ -302,12 +544,18 @@ img.about_page_img{
 
 }
 
-.product-img{
+.video_size{
     padding: 10px;
-    width:300px;
-    height:auto;
+    width:700px;
+    height: 500px;
     margin-bottom: 0.5rem;
 }
+.tracking_img{
+    width:700px;
+    height:auto;
+    margin-bottom: 0.5rem;
+    
+    }
 
 .video-title{
 
@@ -317,24 +565,79 @@ img.about_page_img{
 
 }
 .upload-title{
-    font-size: 20px;
+    font-size: 10px;
     font-weight: 400;
+
 }
 
 .hp-sections{
     display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.grinder-section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px;
+
+}
+
+.logo-section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: fit-content;
+    margin-top: 50px;
+ 
+}
+
+.profile-picture { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.profile-picture img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    
+    
 }
 
-.hp-sections img{
-    display: flex;
-    margin-top: -10px;
-    margin-bottom: -10px;
-    width: 100%;
-    height: calc(.5625 * 100vw);
+.grinder_name{
+    margin: 5px;
+    font-size: 40px;
+    font-weight: 600;
 }
 
+.grinder_info{
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.grinder_info img{
+    height: 50px;
+}
+
+.votd{
+    padding: 10px;
+    height: 800px;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
 
 .button-section{
     display: flex;
@@ -542,7 +845,10 @@ a.workout_done{
     display: flex;
     justify-content: center;
     align-self: center;
-    margin:40px ;
+    margin-top:40px ;
+    margin-right:40px ;
+    margin-left:40px ;
+    
 }
 
 .workout_pic{
@@ -595,8 +901,12 @@ a.workout_done{
     background-color: rgb(214, 139, 214); 
 }
 
+
+
+
 .footer-container{
-    background-color: rgb(70, 42, 42);
+    
+    background-color:  rgb(214, 139, 214);
     max-height: fit-content;
     max-width: 100%;
     padding:20px;
@@ -652,13 +962,13 @@ ul{
     color: #ffffff;
     text-decoration: none;
     font-weight: 300;
-    color:#bbbbbb;
+    color:#ffffff;
     display: block;
     transition: all 0.3s ease;
 }
 
 .footer-column ul li a:hover{
-    color:#ffffff;
+    color:#000000;
     padding-left: 8px;
 
 }
@@ -763,11 +1073,41 @@ img.footer_img{
     }
 }
 
-@media screen and (max-width: 1360px) {
+@media screen and (max-width: 1670px){
+    .tracking_img{
+        width: 500px;
+    }
+    .tdy_workout{
+        width: 500px;
+    
+    }
+
+    .collapsible  {
+        width: 400px;
+    }
+
+    .collapsible_2  {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 1350px) {
     .shop-content{
         justify-content: center;
 
     }
+
+    .tracking-content{
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+    .tracking_img{
+        width: 700px;
+    }
+
+
 }
 
 
@@ -785,7 +1125,7 @@ img.footer_img{
 @media screen and (max-width: 1125px){
     .lb{
         width:100%;
-        padding: 40px 100px;
+        padding: 150px 100px;
     }
 
     a.rank img{
@@ -838,3 +1178,4 @@ img.footer_img{
 
 
 }
+
