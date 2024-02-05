@@ -7,9 +7,10 @@
 </head>
 
 <body>
-    <script src="/JS-Files/nav_fade_and_carousell.js" defer></script>
+    <script src="/JS-Files/nav_fade.js" defer></script>
     <script src="/JS-Files/menu.js" defer></script>
     <script src="/JS-Files/Pbar.js" defer></script>
+    <script src="/JS-Files/popup.js" defer></script>
     
 
 
@@ -53,7 +54,7 @@
             <div class="progress_space">
                 <div class="progress_bar" id="myProgressBar">
                     <div class="user_rank">
-                        <img src="/Background-images/rank_2_track.png">
+                        <img src="/Background-images/rank_2_track.png" alt="Click me" id="trigger-image">
                     </div>
                     <div class="progress">
                         <div class="progress_fill"></div>
@@ -66,6 +67,14 @@
 
         </div>
 
+        <div id="popup-container">
+            <div id="popup-content">
+                <span id="close-btn">&times;</span>
+                
+                <div class="sketchfab-embed-wrapper"> <iframe title="rank 2" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/5128834553b34bd5bd18e6703c8ccb1c/embed?autospin=1&autostart=1&preload=1"> </iframe> </div>
+            </div>
+        </div>
+
         <div class="button-section">
             <div class="text">
                 <a>Video of the day</a>
@@ -73,7 +82,7 @@
         </div>  
         
         <div class="hp-sections">
-            <video controls src="/Background-images/Jayden_vid.mov" alt="Shoes_1" class = "votd"></video>
+            <a target="_blank" title="Video Of The Day"><video controls src="/Background-images/Jayden_vid.mov" alt="Video Of The Day" class = "votd"></a>
         </div>
 
         <div class="button-section">
@@ -133,7 +142,7 @@
                         <h4>SOCIALS</h4>
                         <div class="social-links">
                             <a href="https://www.youtube.com/@NgeeAnnPolyNP" target="_blank" title="Youtube"><img src="/Icons/youtube-icon.png" alt="YouTube" class="footer_img"></a>
-                            <a href="https://www.facebook.com/ngeeannpoly/" target="_blank" title="Twitter"><img src="/Icons/facebook-icon.png" alt="Twitter" class="footer_img"></a>
+                            <a href="https://www.facebook.com/ngeeannpoly/" target="_blank" title="Facebook"><img src="/Icons/facebook-icon.png" alt="Facebook" class="footer_img"></a>
                             <a href="https://www.instagram.com/ngeeannpoly/?hl=en" target="_blank" title="Instagram"><img src="/Icons/instagram-icon.png" alt="Instagram" class="footer_img"></a>
                         </div>
                     </div>
@@ -150,8 +159,8 @@
                     <div class="footer-column">
                         <h4>MORE SITES</h4>
                         <ul>
-                            <li><a href="https://www.np.edu.sg/" target="_blank" title="TravisScott.com">OFFICIAL SITE</a></li>
-                            <li><a href="https://fanpacks.travisscott.com/" target="_blank" title="Merch">GYMWERKZ SOCIAL MEDIA</a></li>
+                            <li><a href="https://www.np.edu.sg/" target="_blank" title="np.edu.sg">OFFICIAL SITE</a></li>
+                            <li><a href="https://www.instagram.com/npgymwerkz/?hl=en" target="_blank" title="NP GYMWERKZ">GYMWERKZ SOCIAL MEDIA</a></li>
                         </ul>
                     </div>
                 </div>
