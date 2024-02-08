@@ -126,3 +126,8 @@ https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs
 
 ### Acknowledgements
 Website was inspired by myfitnesspal, fitbit, strva and video games.
+
+
+
+### Github Link 
+https://github.com/Lebronfan42/IP-
