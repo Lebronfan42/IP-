@@ -1009,7 +1009,7 @@ img.footer_img{
 
 .login_flex {
 
-    background-color: #f8f9fa;
+    background-color: #757575;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -1020,7 +1020,7 @@ img.footer_img{
 .container {
     display: flex;
     flex-direction: column;
-    background-color: #fff;
+    background-color: #757575;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
