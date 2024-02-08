@@ -141,7 +141,7 @@ nav.background{
     position: fixed;
     width: 50%;
     height: 100vh;
-    background-color: rgb(70, 42, 42);
+    background-color: rgb(214, 139, 214);
     padding: 50px;
     transform: translatex(-100000px);
     z-index: 99999999;
@@ -774,28 +774,28 @@ input#collapsible-head_2 {
 }
 
 
-a.position{
+span.position{
     width: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-a.name{
+span.name{
     width:200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-a.rank{
+span.rank{
     display: flex;
     justify-content: space-between;
     align-items: center;
     width:220px
 }
 
-a.points{
+span.points{
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -806,7 +806,7 @@ a.points{
 
 }
 
-a.rank img{
+span.rank img{
     height: 100px;
 }
 
@@ -906,7 +906,7 @@ a.workout_done{
     transition: 0.2s;
     display: flex;
     justify-content: flex-end;
-    width: 0%;
+    width: 20%;
     height: 100%;
     background-color: rgb(214, 139, 214); 
 }
@@ -1005,6 +1005,94 @@ ul{
 img.footer_img{
     height:40px;
     width: 40px;
+}
+
+.login_flex {
+
+    background-color: #f8f9fa;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    transition: box-shadow 0.3s ease;
+}
+
+.container:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: rgb(214, 139, 214);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 10px;
+    color: rgb(214, 139, 214);
+}
+
+input,
+textarea {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    box-sizing: border-box;
+    width: 100%;
+    transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #4caf50;
+    cursor: pointer;
+}
+
+button {
+    padding: 14px;
+    background-color: #4caf50;
+    color: rgb(214, 139, 214);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #45a049;
+    
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+
+.alert-success {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    border-radius: 6px;
+    color: #155724;
 }
 
 @media screen and (max-width: 1350px) {

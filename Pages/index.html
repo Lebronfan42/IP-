@@ -2,175 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Sigma</title>
-    <link rel="stylesheet" href="/Css-File/style.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Css-File/style.css">
+    <title>Login Page</title>
 </head>
-
 <body>
-    <script src="/JS-Files/nav_fade.js" defer></script>
-    <script src="/JS-Files/menu.js" defer></script>
-    <script src="/JS-Files/Pbar.js" defer></script>
-    <script src="/JS-Files/popup.js" defer></script>
+    <script src="/JS-Files/login.js" defer></script>
     <script src="/JS-Files/loading.js" defer></script>
-
-    
 
     <div id="preloader">
         <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script><dotlottie-player src="https://lottie.host/74c0b5cc-119d-4f75-b109-2c1f6bf0f0f5/v4fnjEqhaZ.json" background="transparent" speed="1" style="width: 300px; height: 300px" direction="1" playMode="normal" loop autoplay></dotlottie-player>
     </div>
 
-    <nav class="home-page">
-            <div class="nav-buttons-left"> 
-                <a href="tracking.html">TRACKING</a>
-                <a href="ranking.html">RANKING</a>
-                <a href="videos.html">VIDEOS</a>
-    
-            </div>
-    
-            <div id="Home-Page-Button"> 
-                <a class= "highlight" href="index.html">SIGMA</a> 
-            </div>
-            <div class="toggle-button">
-                <img src="/Icons/menu.png" alt="menu">
-            </div>
-            <div class="nav-buttons-right">
-                 <a href="leaderboard.html">LEADERBOARD</a>  
-                 <a href="login.html">GET STARTED</a> 
-          </div>
-    </nav>
-
-    <ul class="menu">
-        <li><a href = "index.html">HOME</a></li>
-        <li><a href = "tracking.html">TRACKING</a></li>
-        <li><a href = "ranking.html">RANKING</a></li>
-        <li><a href = "videos.html">VIDEOS</a></li>
-        <li><a href = "leaderboard.html">LEADERBOARD</a></li>
-        <li><a href = "login.html">GET STARTED</a></li>
-        
-    </ul>
-
-
-    
-    <div class="header-space">
-        <div class="logo-section">
+    <div class="login_flex">
+        <div class="container">
             <img src="/Background-images/logo.png" alt="Clothing_ad">
-
-            <div class="progress_space">
-                <div class="progress_bar" id="myProgressBar">
-                    <div class="user_rank">
-                        <img src="/Background-images/rank_2_track.png" alt="Click me" id="trigger-image">
-                    </div>
-                    <div class="progress">
-                        <div class="progress_fill"></div>
-                    </div>
-                    <div class="progress_text">
-                        <span class="pbar_text">0%</span>
+            <h1>Login</h1>
+            <form id="add-contact-form" class="form">
+                <div id="add-update-msg">
+                    <div class="alert alert-success" role="alert">
+                        Contact record successfully added
                     </div>
                 </div>
-            </div>
-
-        </div>
-
-        <div id="popup-container">
-            <div id="popup-content">
-                <span id="close-btn">&times;</span>
-                
-                <div class="sketchfab-embed-wrapper"> <iframe title="rank 2" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/5128834553b34bd5bd18e6703c8ccb1c/embed?autospin=1&autostart=1&preload=1"> </iframe> </div>
-            </div>
-        </div>
-
-        <div class="button-section">
-            <div class="text">
-                <a>Video of the day</a>
-            </div>
-        </div>  
-        
-        <div class="hp-sections">
-            <a target="_blank" title="Video Of The Day"><video controls src="/Background-images/Jayden_vid.mov" alt="Video Of The Day" class = "votd"></a>
-        </div>
-
-        <div class="button-section">
-            <div class="text">
-                <a>Todays workout for you</a>
-            </div>
-        </div>
-        
-        <div class="recommended_workouts">
-            <div class="tdy_workout_home">
-                <a href="tracking.html"><img id="completionImage_1" src="/Background-images/back.png" alt="Clothing_1" class = "tracking_img"></a>
-                <h2 class="product-title">Back Workout</h2>
-            </div>
-
-            <div class="tdy_workout_home">
-                <a href="tracking.html"><img id="completionImage_1" src="/Background-images/cardio.png" alt="Clothing_1" class = "tracking_img"></a>
-                <h2 class="product-title">Cardio Workout</h2>
-            </div>
-        </div>
-
-        <div class="button-section">
-            <div class="text">
-                <a>Biggest grinder today </a>
-            </div>
-        </div>
-
-
-        <div class="grinder-section">
-            <div class="profile-picture">
-                <img src="\Background-images\profile.png" alt="Profile Picture">
-            </div>
-            <span class="grinder_name">Toji</span>
-            <span class="grinder_info">+ 100pts | Rank 8 </span>
-        </div>
-
-        <div class="button-section">
-            <div class="text">
-                <a>Download our app for more features! </a>
-            </div>
-        </div>
-
-
-        
-
-
-
-
-
-
-
-        <footer class="footer">
-            <div class="footer-container">
-                <div class="footer-row">
-                    <!-- Footer is seperated into 4 parts  -->
-                    <div class="footer-column">
-                        <!-- each part is dived into more parts which  contain the content  -->
-                        <h4>SOCIALS</h4>
-                        <div class="social-links">
-                            <a href="https://www.youtube.com/@NgeeAnnPolyNP" target="_blank" title="Youtube"><img src="/Icons/youtube-icon.png" alt="YouTube" class="footer_img"></a>
-                            <a href="https://www.facebook.com/ngeeannpoly/" target="_blank" title="Facebook"><img src="/Icons/facebook-icon.png" alt="Facebook" class="footer_img"></a>
-                            <a href="https://www.instagram.com/ngeeannpoly/?hl=en" target="_blank" title="Instagram"><img src="/Icons/instagram-icon.png" alt="Instagram" class="footer_img"></a>
-                        </div>
-                    </div>
-                    <div class="footer-column">
-                        <h4>SITEMAP</h4>
-                        <ul>
-                            <li><a href="tracking.html">TRACKING</a></li>
-                            <li><a href="ranking.html">RANKING</a></li>
-                            <li><a href="videos.html">VIDEOS</a></li>
-                            <li><a href="leaderboard.html">LEADERBOARD</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="footer-column">
-                        <h4>MORE SITES</h4>
-                        <ul>
-                            <li><a href="https://www.np.edu.sg/" target="_blank" title="np.edu.sg">OFFICIAL SITE</a></li>
-                            <li><a href="https://www.instagram.com/npgymwerkz/?hl=en" target="_blank" title="NP GYMWERKZ">GYMWERKZ SOCIAL MEDIA</a></li>
-                        </ul>
+                <div class="form-group">
+                    <div id="special">
+                        <label for="contact-name">Name</label>
+                        <input type="text" id="contact-name" class="form-control" required>
                     </div>
                 </div>
-            </div>
-        </footer> 
+                <div class="form-group">
+                    <label for="contact-email">Email</label>
+                    <input type="email" id="contact-email" class="form-control" required>
+                    <small id="contact-email-help" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                    <label for="contact-msg">Message</label>
+                    <textarea id="contact-msg" class="form-control" required></textarea>
+                </div>
+                <input type="submit" value="Send" class="btn btn-primary" id="contact-submit">
+            </form>
+        </div>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    
+    
+    
 </body>
 </html>
